@@ -2,7 +2,7 @@
 
 import PackageDescription
 
-let pkg = Package(name: "PromiseKit")
+let pkg = Package(name: "PromiseKit", platforms: [.iOS(.v10), .macOS(.v10_12)])
 pkg.products = [
     .library(name: "PromiseKit", type: .dynamic, targets: ["PromiseKit"]),
 ]
